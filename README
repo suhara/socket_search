@@ -1,0 +1,27 @@
+socket_search -- toy search engine program
+  by Yoshihiko Suhara (sleepy_yoshi)
+
+
+* How to install?
+ % make
+
+
+* How to use?
+1. Start server
+ % ./server
+ ./server listening port 46490... 
+
+2. Start client and input query
+ % ./client
+ input query> hoge fuga
+ search results: 1 4 5
+
+Use SIGINT (Ctrl-C) to stop processes.
+
+
+* How to change index directory?
+Change INDEX_DIR to change index directory.
+
+index.h ---
+#define INDEX_DIR "./index"
+---
